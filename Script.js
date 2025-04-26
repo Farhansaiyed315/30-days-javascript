@@ -208,7 +208,7 @@ console.log(`${date}/${month}/${year} : ${hours}:${minutes}:${seconds}:${millise
 
 let num = 3;
 if (num > 0) {
-    console.log(`${num} is a positive number`)
+  console.log(`${num} is a positive number`)
 }
 
 //? if-else statement 
@@ -216,10 +216,10 @@ if (num > 0) {
 let num1 = 3;
 
 if (num1 > 0) {
-    console.log(`${num1} is a positive number`)
+  console.log(`${num1} is a positive number`)
 }
 else {
-    console.log(`${num1} is a negative number`)
+  console.log(`${num1} is a negative number`)
 }
 
 //? Swich statement 
@@ -261,10 +261,10 @@ console.log("Today is:", dayName);
 
 
 
-const numbers2 = [1,2,3,4,5,6,7,8,9]
+const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 console.log(numbers2);
 
-const fruits = ["Banana", "Apple","orange","Papaya"]
+const fruits = ["Banana", "Apple", "orange", "Papaya"]
 console.log(fruits); //? Array can have items of different datatypes. 
 
 
@@ -281,7 +281,7 @@ console.log(mycompany);
 //? Accessing Array. 
 
 const fruits1 = ['banana', 'orange', 'mango', 'lemon']
- let firstFruit = fruits1[0] // we are accessing the first item using its index
+let firstFruit = fruits1[0] // we are accessing the first item using its index
 console.log(firstFruit) // banana secondFruit = fruits[1]
 
 let SecondFruits = fruits1[1]
@@ -294,7 +294,7 @@ console.log(ThirdFruits);
 //! Modifing arary elements.  Array mutable hai mere dost. 
 
 
-let Numbers = [1,2,3,4,5,6,7,8,]
+let Numbers = [1, 2, 3, 4, 5, 6, 7, 8,]
 Numbers[0] = 10;
 Numbers[1] = 20;
 Numbers[2] = 30;
@@ -304,23 +304,23 @@ console.log(Numbers);
 
 //! Methods to manuplate array. (join karna)
 
-let firstlist = [1,2,3,4,]
-let secondlist = [5,6,7,8,]
+let firstlist = [1, 2, 3, 4,]
+let secondlist = [5, 6, 7, 8,]
 const Thirdlist = firstlist.concat(secondlist)
 console.log(Thirdlist);
 
 
 console.log(firstlist.length);   // 4 is the size of the array. 
-console.log(firstlist.indexOf(2)); 
+console.log(firstlist.indexOf(2));
 
-console.log(firstlist.join());  
+console.log(firstlist.join());
 
 console.log(firstlist.toString());
 
-console.log(firstlist.slice(1,3));  // doest contain the last element. 
+console.log(firstlist.slice(1, 3));  // doest contain the last element. 
 
 let Numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,];
-let result = Numbers2.splice(7,5); 
+let result = Numbers2.splice(7, 5);
 console.log(result);        // Removed items
 console.log(Numbers2);       // Updated array
 
@@ -337,7 +337,7 @@ console.log(firstlist);
 console.log(firstlist.unshift(0));  // start  mein add karna. 
 console.log(firstlist);
 
-console.log(firstlist.reverse()); 
+console.log(firstlist.reverse());
 console.log(firstlist);
 
 
@@ -347,6 +347,46 @@ console.log(firstlist);
 
 console.log("Testing commit activity");
 
+//? For Loop
+
+for (let i = 0; i <= 5; i++) {
+
+  console.log(i);
+
+}
+
+let countries = ['Finland', 'Sweden', 'India'];
+
+const newArr = [];
+for(let i = 0; i < countries.length; i++) {
+  newArr.push(countries[i].toUpperCase());
+}
+
+console.log(newArr);
+
+
+//? While Loop
+console.log("While Loop");
+
+let i = 0
+while (i < 5 ){
+  console.log(i);
+  i++
+  
+}
+
+console.log("Do while loop");
+
+//? Do While Loop
+
+let j = 0
+do{
+  console.log(j);
+  j++
+} while (j <= 5)
+
+
+  
 
 
 
