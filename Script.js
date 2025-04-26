@@ -345,6 +345,8 @@ console.log(firstlist);
 
 //! DAY-6 LOOPS.............-------------------.................-----------------............---------------.....
 
+console.log("Testing commit activity");
+
 
 
 
