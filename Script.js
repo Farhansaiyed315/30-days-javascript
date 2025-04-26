@@ -386,7 +386,18 @@ do{
 } while (j <= 5)
 
 
-  
+
+//? For off Loop
+console.log("For off loop");
+
+  let countries1 = ['Finland', 'Sweden', 'India'];
+
+for (let country of countries1) {
+  console.log(country);
+}
+
+
+
 
 
 
