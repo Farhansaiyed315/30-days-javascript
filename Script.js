@@ -397,6 +397,115 @@ for (let country of countries1) {
 }
 
 
+//? Break 
+console.log("Break dikha raha huu");
+
+
+for( let i = 0; i < 5 ; i++)
+  {
+    if(i == 3){
+      break;
+    }
+    console.log(i);
+    
+  }
+  
+  
+  
+  console.log(" contunue dikha raha huu"); //! continue skip ki tarah kaam karta hai. 
+
+for( let i = 0; i < 5 ; i++)
+{
+  if(i == 3){
+    continue;
+  }
+  console.log(i); 
+}
+console.log("Dekho 3 skip ho gaya");
+
+//! DAY-7 FUNCTIONS..............---------------................---------------..............-------------.......
+
+function square(){
+  let num3 = 4;
+  let sq  = num3 * num3;
+  console.log(sq);
+  
+}
+square();  console.log("call karna jaroori hai har baar bhul jata hai yaad rakho sweety.");
+
+//? Functin with return. 
+console.log("Function with return type.");
+
+function FullName(){
+  let  FirstName = 'Farhan'
+  let LastName = "Saiyed"
+  let FullName = FirstName + LastName;
+  console.log(FullName);
+  return FullName
+}
+
+FullName()
+
+
+//? Function with parameter. 
+console.log("Function with parameter.");
+
+function square(number){
+  return number * number
+}
+console.log(square(10));
+
+//? Arrow functions. 
+console.log("Arrow functions");
+
+function add1(a, b) {
+  return a + b;
+}
+console.log(add1(2,3));
+
+
+
+const add2 = (a, b) => {
+  return a + b;
+};
+
+console.log(add2(2,3));
+
+
+const add3 = (a, b) => a + b;
+console.log(add3(2,3));
+
+
+//? Anonymous function
+console.log("Anonymous funtions.");
+
+const greet = function(name) {
+  return "Hello " + name;
+};
+
+console.log(greet("Farhan")); // Hello Farhan
+
+
+// Immediately Invoked Function Expression (IIFE)
+console.log("Immediately Invoked Function Expression (IIFE)");
+
+(function() {
+  console.log("I run automatically!");
+})();         // Last ka () matlab IIFI hai.
+
+
+//? Function with default parameters
+console.log("Function with default parameters");
+
+function greet1(name = "Guest") {
+  console.log("Hello " + name);
+}
+greet1()
+
+
+
+
+
 
 
 
