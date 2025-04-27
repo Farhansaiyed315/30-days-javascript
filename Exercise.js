@@ -68,6 +68,7 @@ console.log(result5);  // Output: "30 Days of JavaScript"
 
 
 //? Exercise level 2. 
+console.log("page number 50 xodo");
 
 
 // Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
