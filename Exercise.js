@@ -179,6 +179,34 @@ let phrase = sentence4.substr(startIndex, 23);
 console.log(phrase); 
 
 
+//! Exercise level 3.
+
+//? 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
+console.log("Question no 1----");
+
+let sentence6 = 'Love is the best thing in this world. Some found their love and some are still looking for their love.';
+
+
+// let matches = sentence6.match(/love/gi);  // 'g' for global search, 'i' for case-insensitive
+// let count = matches ? matches.length : 0;
+// console.log(count);
+
+//? Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+console.log("Question no 2-------------");
+let sentence7 = 'You cannot end a sentence with because because because is a conjunction';
+
+let matches = sentence7.match(/because/gi);  // 'g' for global search, 'i' for case-insensitive
+let count = matches ? matches.length : 0;  
+console.log(count); 
+
+
+
+
+
+
+
+
+
 
 
 
