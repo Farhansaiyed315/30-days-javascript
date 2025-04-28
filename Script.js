@@ -358,7 +358,7 @@ for (let i = 0; i <= 5; i++) {
 let countries = ['Finland', 'Sweden', 'India'];
 
 const newArr = [];
-for(let i = 0; i < countries.length; i++) {
+for (let i = 0; i < countries.length; i++) {
   newArr.push(countries[i].toUpperCase());
 }
 
@@ -369,10 +369,10 @@ console.log(newArr);
 console.log("While Loop");
 
 let i = 0
-while (i < 5 ){
+while (i < 5) {
   console.log(i);
   i++
-  
+
 }
 
 console.log("Do while loop");
@@ -380,7 +380,7 @@ console.log("Do while loop");
 //? Do While Loop
 
 let j = 0
-do{
+do {
   console.log(j);
   j++
 } while (j <= 5)
@@ -390,7 +390,7 @@ do{
 //? For off Loop
 console.log("For off loop");
 
-  let countries1 = ['Finland', 'Sweden', 'India'];
+let countries1 = ['Finland', 'Sweden', 'India'];
 
 for (let country of countries1) {
   console.log(country);
@@ -401,43 +401,41 @@ for (let country of countries1) {
 console.log("Break dikha raha huu");
 
 
-for( let i = 0; i < 5 ; i++)
-  {
-    if(i == 3){
-      break;
-    }
-    console.log(i);
-    
+for (let i = 0; i < 5; i++) {
+  if (i == 3) {
+    break;
   }
-  
-  
-  
-  console.log(" contunue dikha raha huu"); //! continue skip ki tarah kaam karta hai. 
+  console.log(i);
 
-for( let i = 0; i < 5 ; i++)
-{
-  if(i == 3){
+}
+
+
+
+console.log(" contunue dikha raha huu"); //! continue skip ki tarah kaam karta hai. 
+
+for (let i = 0; i < 5; i++) {
+  if (i == 3) {
     continue;
   }
-  console.log(i); 
+  console.log(i);
 }
 console.log("Dekho 3 skip ho gaya");
 
 //! DAY-7 FUNCTIONS..............---------------................---------------..............-------------.......
 
-function square(){
+function square() {
   let num3 = 4;
-  let sq  = num3 * num3;
+  let sq = num3 * num3;
   console.log(sq);
-  
+
 }
-square();  console.log("call karna jaroori hai har baar bhul jata hai yaad rakho sweety.");
+square(); console.log("call karna jaroori hai har baar bhul jata hai yaad rakho sweety.");
 
 //? Functin with return. 
 console.log("Function with return type.");
 
-function FullName(){
-  let  FirstName = 'Farhan'
+function FullName() {
+  let FirstName = 'Farhan'
   let LastName = "Saiyed"
   let FullName = FirstName + LastName;
   console.log(FullName);
@@ -450,7 +448,7 @@ FullName()
 //? Function with parameter. 
 console.log("Function with parameter.");
 
-function square(number){
+function square(number) {
   return number * number
 }
 console.log(square(10));
@@ -461,7 +459,7 @@ console.log("Arrow functions");
 function add1(a, b) {
   return a + b;
 }
-console.log(add1(2,3));
+console.log(add1(2, 3));
 
 
 
@@ -469,17 +467,17 @@ const add2 = (a, b) => {
   return a + b;
 };
 
-console.log(add2(2,3));
+console.log(add2(2, 3));
 
 
 const add3 = (a, b) => a + b;
-console.log(add3(2,3));
+console.log(add3(2, 3));
 
 
 //? Anonymous function
 console.log("Anonymous funtions.");
 
-const greet = function(name) {
+const greet = function (name) {
   return "Hello " + name;
 };
 
@@ -489,7 +487,7 @@ console.log(greet("Farhan")); // Hello Farhan
 // Immediately Invoked Function Expression (IIFE)
 console.log("Immediately Invoked Function Expression (IIFE)");
 
-(function() {
+(function () {
   console.log("I run automatically!");
 })();         // Last ka () matlab IIFI hai.
 
@@ -501,6 +499,50 @@ function greet1(name = "Guest") {
   console.log("Hello " + name);
 }
 greet1()
+console.log("\n\n\n\,"),
+
+
+
+//!  DAY-8 Scopes and OBJECTS............----------------................----------------..............----------
+
+
+console.log("DAY-8 Scopes and OBJECTS.........\n");
+
+const person = {}; // An emplty object. 
+// FirstName: "Farhan",  //? And these are properties of Object
+//   LastName: "Saiyed", //? properties of Object
+//   Class: "10",        //? properties of Object
+//   City: "Kolkata"     //? properties of Object
+
+
+const person1 = {
+  FirstName: "Farhan",
+  LastName: ['Saiyed'],
+  Class: "10",
+  City: "Kolkata",
+  ph:"80015555"
+}
+
+//? Getting values from an object. 
+
+// We can access values from two methods
+// 1. Using . Method.
+// 2. Using Square bracket Method.
+
+console.log(person1.City);
+console.log(person1.FirstName);
+console.log(person1.LastName);
+
+console.log(person1['ph']);   //We use Square brackets when there is a special character or space in between properties. 
+
+
+//! An object is a mutable datastructure and we can modify its content. 
+
+person1.LastName.push("js")
+console.log(person1.LastName);   // Note .push only works on arrays 
+
+
+
 
 
 
