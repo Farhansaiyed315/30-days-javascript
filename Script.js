@@ -690,6 +690,69 @@ let doubleNumbers = numbers.map(function(num) {
 console.log(doubleNumbers);
 
 
+//? FILTER -------------------------------------------
+
+//! Create a new array with only those elements that pass a test (condition).
+
+let numbers1 = [1, 2, 3, 4, 5, 6];
+
+let evenNumbers = numbers1.filter(function(num) {
+  return num % 2 === 0; // condition: only even numbers
+});
+
+console.log(evenNumbers);
+
+
+
+//? REDUCE ......................................
+// Combine all elements of an array into a single value (like sum, product, etc.).
+
+let numbers3 = [1, 2, 3, 4, 5];
+
+let total = numbers3.reduce(function(acc, num) {
+  return acc + num;
+}, 0);
+
+console.log(total); // 15
+
+
+//? EVERY.....................................
+// Check if all elements of the array satisfy a condition.
+
+let numbers4 = [2, 4, 6, 8];
+
+let areAllEven = numbers4.every(function(num) {
+  return num % 2 === 0; // Check if even
+});
+
+console.log(areAllEven);
+
+///        FIND.....................................................
+
+// Find the first element in an array that matches a condition.
+
+let numbers5 = [5, 12, 8, 130, 44];
+
+let found = numbers5.find(function(num) {
+  return num > 10; // condition
+});
+
+console.log(found);
+
+
+/// FINDINDEX ....................
+
+//!  Find the index (position) of the first element that matches a condition.
+let numbers6 = [5, 12, 8, 130, 44];
+
+let index = numbers6.findIndex(function(num) {
+  return num > 10; // condition
+});
+
+console.log(index);  //! Note index return kiya hai value nahi value 12 hai 12 is greater then 10 and 12 index 1 mein hai 
+
+
+
 
 
 
