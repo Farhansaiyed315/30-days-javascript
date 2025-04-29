@@ -749,8 +749,48 @@ let index = numbers6.findIndex(function(num) {
   return num > 10; // condition
 });
 
-console.log(index);  //! Note index return kiya hai value nahi value 12 hai 12 is greater then 10 and 12 index 1 mein hai 
+console.log(index);  //! Note index return kiya hai value nahi value 12 hai 12 is greater than 10 and 12 index 1 mein hai
 
+
+//? Sort. 
+
+//! By default, .sort() converts elements to strings and sorts them alphabetically.
+
+const fruits3 = ['banana', 'apple', 'orange'];
+fruits.sort();
+console.log(fruits3); // ['apple', 'banana', 'orange']
+
+
+
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
+names.sort();
+console.log(names); // ['Asabeneh', 'Brook', 'Elias', 'Mathias']
+
+
+
+const numbers7 = [100, 25, 9, 1];
+numbers7.sort((a, b) => a - b);
+console.log(numbers7); // [1, 9, 25, 100]
+
+
+
+//? Sorting Object Arrays
+
+const users = [
+  { name: 'Farhan', age: 21 },
+  { name: 'Ayesha', age: 19 },
+  { name: 'Zaid', age: 25 }
+];
+
+// Ascending: Youngest to Oldest
+users.sort((a, b) => a.age - b.age);
+
+console.log(users);
+// [
+//   { name: 'Ayesha', age: 19 },
+//   { name: 'Farhan', age: 21 },
+//   { name: 'Zaid', age: 25 }
+// ]
 
 
 
