@@ -504,9 +504,9 @@ console.log("\n\n\n\,"),
 
 
 //!  DAY-8 Scopes and OBJECTS............----------------................----------------..............----------
-
-
 console.log("DAY-8 Scopes and OBJECTS.........\n");
+
+
 
 const person = {}; // An emplty object. 
 // FirstName: "Farhan",  //? And these are properties of Object
@@ -542,9 +542,6 @@ person1.LastName.push("js")
 console.log(person1.LastName);   // Note .push only works on arrays 
 
 
-
-
-
 //? Object Methods
 
 const student = {
@@ -566,6 +563,148 @@ console.log(entries);                            //  It returns an array of arra
 console.log(student.hasOwnProperty("name"));    // It only checks own properties, not prototype properties.
 
 console.log(student.hasOwnProperty("course"));
+
+
+
+//!  DAY- 9 HIGHER ORDER FUNCTIONS ............----------------................----------------..............----
+
+
+console.log("DAY-9 Scopes and OBJECTS..............\n");
+
+//  A named function that is passed to another function as an argument and is called later.
+function greet1(name) {
+  console.log("Hello, " + name);
+}
+
+function processUserInput(callback) {
+  let name = "Farhan";  // Assume we got user's name
+  callback(name);       // Call the callback function with name
+}
+
+processUserInput(greet1);
+
+
+//? Another Example (Anonymous Callback)
+// A function without a name that is directly passed as a callback to another function.
+
+
+function calculate(a, b, callback) {
+  let result = a + b;
+  callback(result);
+}
+
+calculate(5, 3, function(sum) {
+  console.log("Sum is: " + sum);
+});
+
+
+//? Returning function
+//  A returning function is a function that returns another function.
+
+
+//?   |     Term         | Meaning |
+//    |------------------|--------------|
+//    |   Outer Function   | The main (outside) function that is created first. |
+//    |   Inner Function   | A  function inside another function  is called an inner function. |
+
+function outerFunction() {
+  function innerFunction() {
+    console.log("Hello from inner function!");
+  }
+  return innerFunction;
+}
+
+const myFunc = outerFunction(); // outerFunction returns innerFunction
+myFunc(); // Now we call the returned function
+
+
+//!  THE FOREACH METHOD USES CALL BACK.
+// It goes through each element in the array one by one.
+// For every element, it calls a function (the callback function) and performs an action.
+// No need to use for, while, or any other loop manually.
+// forEach automates the process.
+// You can use forEach only on arrays, not on normal objects.
+
+
+function printFruit(fruit2) {
+  console.log(fruit2);
+}
+
+let fruits2 = ["apple", "banana", "cherry"];
+fruits2.forEach(printFruit);
+
+
+//?  SETTING INTERVAL USING A SETINTERVAL FUNCTION
+//? Run a piece of code again and again after a fixed time gap (interval).
+
+
+
+// setInterval(function() {
+//   console.log("Hello Farhan!");
+// }, 2000); // 2000 milliseconds = 2 seconds
+
+
+//? Stop setInterval
+
+// let intervalId = setInterval(function() {
+//   console.log("Running...");
+// }, 1000);
+
+// // After 5 seconds, stop the interval
+// setTimeout(function() {
+//   clearInterval(intervalId);
+//   console.log("Stopped!");
+// }, 5000);
+
+
+//!  SETTIMEOUT------------------------
+
+
+// setTimeout(function() {
+//   console.log("Hello Farhan after 3 seconds!");
+// }, 3000); // 3000 milliseconds = 3 seconds
+
+
+//? Cancel setTimeout
+
+//! Run a piece of code once, after waiting for a specific time (delay).
+
+// let timeoutId = setTimeout(function() {
+//   console.log("You will not see this message");
+// }, 5000);
+
+// // Cancel the timeout
+// clearTimeout(timeoutId);
+// console.log("Timeout cancelled!");
+
+//? MAP().........................................................
+
+// Always creates a new array
+// Old array remains same
+let numbers = [1, 2, 3, 4, 5];
+
+let doubleNumbers = numbers.map(function(num) {
+  return num * 2;
+});
+
+console.log(doubleNumbers);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
