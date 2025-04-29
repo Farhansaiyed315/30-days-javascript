@@ -543,11 +543,30 @@ console.log(person1.LastName);   // Note .push only works on arrays
 
 
 
+//!  DAY-9 Scopes and OBJECTS............----------------................----------------..............----------
+console.log("DAY-9 Scopes and OBJECTS................\n");
 
+//? Object Methods
 
+const student = {
+  name: "Farhan",
+  age: 22,
+  course: "BCA"
+};
 
+const keys = Object.keys(student);
+console.log(keys);  // You can quickly get all the keys of an object without writing a loop manually
 
+const values = Object.values(student);
+console.log(values);       //  Object.values:To get values of an object as an array
 
+const entries = Object.entries(student);
+console.log(entries);                            //  It returns an array of arrays [key, value].
+                                                // The order is same as keys were inserted.
+
+console.log(student.hasOwnProperty("name"));    // It only checks own properties, not prototype properties.
+
+console.log(student.hasOwnProperty("course"));
 
 
 
