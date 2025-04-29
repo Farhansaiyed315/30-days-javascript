@@ -543,8 +543,7 @@ console.log(person1.LastName);   // Note .push only works on arrays
 
 
 
-//!  DAY-9 Scopes and OBJECTS............----------------................----------------..............----------
-console.log("DAY-9 Scopes and OBJECTS................\n");
+
 
 //? Object Methods
 
