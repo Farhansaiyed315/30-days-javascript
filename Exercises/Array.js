@@ -83,12 +83,13 @@ if (itCompanies.includes(companyToSearch)) {
   console.log(companyToSearch + " exists in the array.");
 } else {
   console.log(companyToSearch + " is not found.");
+}
 
   //!  Filter out companies which have more than one 'o' without the filter method.
 
   
 
-let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
+
 
 let companiesWithMoreThanOneO = [];
 
@@ -111,37 +112,63 @@ console.log(companiesWithMoreThanOneO);
 //! Sort the array using sort() method.
 
 itCompanies.sort();
+console.log(itCompanies);
 
-// Print the sorted array
+//! Reverse the array using reverse() method
+
+itCompanies.reverse();
+console.log(itCompanies);
+
+//! Slice out the first 3 companies from the array
+
+let firstThree = itCompanies.slice(0, 3);
+console.log(firstThree);
+
+
+//! Slice out the last 3 companies from the array
+ let itCompanies1 = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
+
+
+let lastThree = itCompanies1.slice(-3);
+
+console.log(lastThree);
+
+//! Slice out the middle IT company or companies from the array
+
+let middle = [];
+
+let midIndex = Math.floor(itCompanies1.length / 2);
+
+
+
+// Since the length is 7 (odd), we take 1 middle company
+middle = itCompanies1.slice(midIndex, midIndex + 1);
+
+console.log("Middle company:", middle);
+
+//! Remove the first IT company from the array.
+
+itCompanies.shift();
+console.log(itCompanies);
+
+
+//! Remove the middle IT company or companies from the array.
+
+let midIndex1 = Math.floor(itCompanies.length / 2); // 3 for 7 items
+
+
+itCompanies.splice(midIndex1, 1);
+
+console.log(itCompanies);
+//! Remove the last IT company from the array.
+
+itCompanies.pop();
+console.log(itCompanies);
+
+//! Remove all IT companies
+
+itCompanies = [];
 console.log(itCompanies);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
