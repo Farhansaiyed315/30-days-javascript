@@ -87,9 +87,6 @@ if (itCompanies.includes(companyToSearch)) {
 
   //!  Filter out companies which have more than one 'o' without the filter method.
 
-  
-
-
 
 let companiesWithMoreThanOneO = [];
 
@@ -169,6 +166,9 @@ console.log(itCompanies);
 
 itCompanies = [];
 console.log(itCompanies);
+
+
+
 
 
 
