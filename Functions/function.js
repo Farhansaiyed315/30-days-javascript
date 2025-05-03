@@ -95,3 +95,65 @@ function calculateSpeed(distance, time) {
 console.log(calculateSpeed(100, 2)); 
 
 
+
+//! Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight
+
+function calculateWeight(mass, gravity) {
+    return mass * gravity;
+}
+
+console.log(calculateWeight(10, 9.8)); // Output: 98
+
+
+//! Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
+
+function calculateWeight(mass, gravity) {
+    return mass * gravity;
+}
+
+console.log(calculateWeight(10, 9.8)); 
+
+
+
+
+//! Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer
+
+function checkSeason(month) {
+    if (['December', 'January', 'February'].includes(month)) {
+        return 'Winter';
+    } else if (['March', 'April', 'May'].includes(month)) {
+        return 'Spring';
+    } else if (['June', 'July', 'August'].includes(month)) {
+        return 'Summer';
+    } else if (['September', 'October', 'November'].includes(month)) {
+        return 'Autumn';
+    } else {
+        return 'Invalid month';
+    }
+}
+
+console.log(checkSeason('March')); 
+console.log(checkSeason('July')); 
+
+
+//! Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+//! console.log(findMax(0, 10, 5)) 10
+//! console.log(findMax(0, -10, -2)) 0
+
+function findMax(a, b, c) {
+    if (a >= b && a >= c) {
+        return a;
+    } else if (b >= a && b >= c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+
+console.log(findMax(0, 10, 5));  
+console.log(findMax(0, -10, -2));
+
+
+
+//! BMI wala bacha hai. 
+
