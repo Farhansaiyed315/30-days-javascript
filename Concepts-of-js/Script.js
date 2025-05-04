@@ -794,6 +794,156 @@ console.log(users);
 
 
 
+//! DAY-10 SETS AND MAPS.............----------------...............---------------..................------------
+//Set automatically removes duplicates.
+// You can quickly check if a value exists.
+// ➕➖ 3. Easy add and delete
+// Delete with .delete(value)
+
+const companies = new Set();
+console.log(companies);
+
+
+
+//! To create a Set from an array in JavaScript, you can pass the array directly into the Set constructor.
+const numbers10 = [1, 2, 3, 2, 4, 1];
+const uniqueNumbers = new Set(numbers10);
+
+console.log(uniqueNumbers); 
+
+
+//? Adding an element to a set.....................
+
+const fruits10 = new Set();
+
+fruits10.add("apple");
+fruits10.add("banana");
+fruits10.add("apple"); // Duplicate, will be ignored
+
+console.log(fruits10);
+
+
+
+//? Deleting an element a set....................
+
+const fruits11 = new Set(["apple", "banana", "mango"]);
+
+fruits11.delete("banana"); // Removes 'banana'
+
+console.log(fruits11); 
+
+//? Checking an element in the set.........................
+
+const fruits12 = new Set(["apple", "banana", "mango"]);
+
+console.log(fruits12.has("banana")); // true
+console.log(fruits12.has("orange")); // false
+
+//! .has() is case-sensitive, meaning "apple" and "Apple" would be treated as different values.
+
+console.log(fruits12.has("Apple")); // false (different case)
+
+
+//? Clearing the set.....................................
+
+const fruits13 = new Set(["apple", "banana", "mango"]);
+
+fruits13.clear(); // Clears all elements in the Set
+
+console.log(fruits13); 
+
+//? Union of sets......................................
+
+//! To perform a union of two sets in JavaScript, you can combine them using the Set constructor and the spread operator (...).
+
+const set1 = new Set([1, 2, 3]);
+const set2 = new Set([3, 4, 5]);
+
+// Union of set1 and set2
+const unionSet = new Set([...set1, ...set2]);
+
+console.log(unionSet); // Set(5) { 1, 2, 3, 4, 5 }
+
+//? Intersection of sets..........................................
+
+
+// To find the intersection of two sets in JavaScript (i.e., the common elements between the sets), you can use the forEach() method and check if an element from one set exists in the other.
+
+const set10 = new Set([1, 2, 3, 4]);
+const set20 = new Set([3, 4, 5, 6]);
+
+// Intersection of set1 and set2
+const intersectionSet = new Set(
+  [...set10].filter(item => set20.has(item))
+);
+
+console.log(intersectionSet); // Set(2) { 3, 4 }
+
+
+
+// Alternative using .forEach():...........................>>>>>>>>>>>>>>>>>>>>>>>
+
+const set11 = new Set([1, 2, 3, 4]);
+const set21 = new Set([3, 4, 5, 6]);
+
+const intersectionSet13 = new Set();
+
+set11.forEach(item => {
+  if (set21.has(item)) {
+    intersectionSet13.add(item);
+  }
+});
+
+console.log(intersectionSet13); // Set(2) { 3, 4 }
+
+
+
+const set13 = new Set([1, 2, 3, 4]);
+const set23 = new Set([3, 4, 5, 6]);
+
+//?  Difference of set1 and set2....................
+const differenceSet = new Set(
+  [...set13].filter(item => !set23.has(item))
+);
+
+console.log(differenceSet); // Set(2) { 1, 2 }
+
+
+// Alternative using .forEach():.................................>>>>>>>>>>>>>>>>
+
+const set15 = new Set([1, 2, 3, 4]);
+const set25 = new Set([3, 4, 5, 6]);
+
+const differenceSet2 = new Set();
+
+set1.forEach(item => {
+  if (!set25.has(item)) {
+    differenceSet2.add(item);
+  }
+});
+
+console.log(differenceSet); // Set(2) { 1, 2 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
