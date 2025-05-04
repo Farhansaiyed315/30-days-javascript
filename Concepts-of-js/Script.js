@@ -924,61 +924,65 @@ set1.forEach(item => {
 
 console.log(differenceSet); // Set(2) { 1, 2 }
 
+//! Map................-----------------....................-----------------------......................-------
+
+//? Creating an empty Map.............
+
+let myMap = new Map();
+
+//? Creating an Map from array..............
+
+let data = [
+  ['name', 'Farhan'],
+  ['age', 22],
+  ['city', 'Mumbai']
+];
+
+let myMap1 = new Map(data);
+
+console.log(myMap1.get('name')); 
+console.log(myMap1.get('city')); 
 
 
 
+//? Adding values to the Map..........
+
+let myMap2 = new Map();
+
+
+myMap2.set('name', 'Farhan');
+myMap2.set('age', 22);
+myMap2.set('city', 'Mumbai');
+
+
+myMap2.set('city', 'Pune');
+
+console.log(myMap2);
+
+
+//? Getting a value from Map.....................
+
+let myMap4 = new Map();
+myMap4.set('name', 'Farhan');
+myMap4.set('age', 22);
+
+console.log(myMap4.get('name')); // Output: Farhan
+console.log(myMap4.get('age'));  // Output: 22
+console.log(myMap4.get('city')); // Output: undefined (not in map)
+
+
+//? Checking key in Map............................
+
+let myMap5 = new Map();
+myMap5.set('name', 'Farhan');
+myMap5.set('age', 22);
+
+console.log(myMap5.has('name')); // true
+console.log(myMap5.has('city')); // false..........
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
