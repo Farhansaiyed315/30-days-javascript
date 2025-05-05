@@ -50,13 +50,21 @@ console.log(text.charAt(15));
 let text2 = "30 Days Of JavaScript"
 console.log(text2.charCodeAt("J"));
 
+//! Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript
 console.log(text2.indexOf("a"));
 console.log(text2.lastIndexOf("a"));
 
+//! Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
 let sentence ='You cannot end a sentence with because because because is a conjunction'
 console.log(sentence.length);
 console.log(sentence.indexOf("because"));
+
+//! Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
 console.log(sentence.lastIndexOf("because"));
+
+//! Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+let firstPosition = sentence.search("because");
+console.log(firstPosition);
 
 let me = "  helo  ";
 let result4 = me.trim()

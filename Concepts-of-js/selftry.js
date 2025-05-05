@@ -51,6 +51,30 @@ console.log(challenge.charCodeAt("j")); // This is the AASCI code.
 //! Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
 console.log(challenge.indexOf("a"));
 
+//! Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript
+console.log(challenge.lastIndexOf("a"));
+
+//! Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+let sentence = 'You cannot end a sentence with because because because is a conjunction'
+console.log(sentence.length);
+console.log(sentence.indexOf("because"));
+
+//! Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+console.log(sentence.lastIndexOf("because"));
+
+//! Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+let firstPosition = sentence.search("because");
+console.log(firstPosition);
+
+//! Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
+let trimmedchallenge = challenge.trim();  // ' 30 Days Of JavaScript '  -> 30 Days Of JavaScript bana deta hai 
+console.log(trimmedchallenge);  
+
+
+
+
+
 
 
 
