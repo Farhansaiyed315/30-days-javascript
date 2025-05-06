@@ -71,6 +71,28 @@ console.log(firstPosition);
 let trimmedchallenge = challenge.trim();  // ' 30 Days Of JavaScript '  -> 30 Days Of JavaScript bana deta hai 
 console.log(trimmedchallenge);  
 
+//! Use startsWith() method with the string 30 Days Of JavaScript and make the result true.
+console.log(challenge.startsWith("3"));
+
+//! Use endsWith() method with the string 30 Days Of JavaScript and make the result true.
+console.log(challenge.endsWith("t"));
+
+//! Use match() method to find all the a’s in 30 Days Of JavaScript.
+console.log(challenge.match(/a/g));
+
+//! Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
+let string1 = "30 Days of";
+let string2 = " JavaScript";
+let result1 = string1.concat(string2);
+console.log(result1);
+
+//! Use repeat() method to print 30 Days Of JavaScript 2 times
+console.log(challenge.repeat(2));
+
+
+
+
+
 
 
 
