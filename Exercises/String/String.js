@@ -86,7 +86,7 @@ console.log(result5);  // Output: "30 Days of JavaScript"
 console.log("page number 50 xodo");
 
 
-// Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+//! Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
 console.log("Question no 3-------------");
 let num1 = Number('10');
 let num2 = 10;
