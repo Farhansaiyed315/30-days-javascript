@@ -180,6 +180,65 @@ let phrase = sentence4.substr(startIndex,23);
 console.log(phrase);
 
 
+console.log("Array.js");
+console.log("=========================");
+
+let you = [];
+console.log(you);
+
+//! Declare an array with more than 5 number of elements.
+
+let num4 = [1,2,3,4,5,6,7];
+console.log(num4);
+console.log(num4.length);
+
+//! Get the first item, the middle item and the last item of the array
+
+console.log("first element",num4[0]);
+console.log("Middle element",num4[Math.floor(num4.length/2)]);
+console.log("last Index",num4.length - 1);
+console.log("last Item", num4[num4.length - 1]);
+
+//! Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+
+let itcompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+console.log(itcompanies);
+
+//! Print the number of companies in the array
+console.log('Question no 8 ---------------------\n');
+console.log("Number of companies:", itcompanies.length);
+
+
+//! Print the first company, middle and last company
+console.log('Question no 9 ---------------------\n');
+
+console.log("First company", itcompanies[0]);
+let middleIndex = Math.floor(itcompanies.length/2)
+console.log("Middle company", itcompanies[middleIndex]);
+console.log("LastCompany",itcompanies[itcompanies.length -1]);
+
+console.log('Question no 10 ---------------------\n');
+//! Print out each company.
+
+itcompanies.forEach(function(company){
+    console.log(company);
+    
+})
+
+console.log('Question no 11 ---------------------\n');
+
+  //! Change each company name to uppercase one by one and print them out
+
+  itcompanies.forEach(function(company){
+    console.log(company.toUpperCase());
+    
+  })
+
+
+
+
+
+
 
 
 
