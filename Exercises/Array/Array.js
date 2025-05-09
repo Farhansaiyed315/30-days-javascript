@@ -167,8 +167,3 @@ console.log(itCompanies);
 itCompanies = [];
 console.log(itCompanies);
 
-
-
-
-
-

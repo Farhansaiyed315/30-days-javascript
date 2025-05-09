@@ -334,11 +334,43 @@ console.log('Question no 22---------------------\n');
 itCompanies = [];
 console.log(itCompanies);
 
+console.log("Functions");
+
+
+//! Declare a function fullName and it print out your full name.
+console.log('Question no 1 ---------------------\n');
+
+function FullName(){
+  console.log("Farhan Saiyed");
+  
+}
+FullName()
+
+
+//! Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
+console.log('Question no 2 ---------------------\n');
+
+function FullNames(FirstName,LastName){
+  return FirstName +" "+ LastName;
+
+}
+console.log(FullNames("Farhan" , "Saiyed"));
+
+
+//! Declare a function addNumbers and it takes two two parameters and it returns sum.
+console.log('Question no 3 ---------------------\n');
+
+function sum(a , b)
+{
+return a + b;
+}
+console.log(sum(10, 25));
+
+//! An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle
+console.log('Question no 4 ---------------------\n');
 
 
 
-
-
-
+ 
 
 
