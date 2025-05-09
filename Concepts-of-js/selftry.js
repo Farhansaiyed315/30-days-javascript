@@ -17,7 +17,7 @@ console.log(st.slice());
 // We add +1 to skip the space.
 let str = "My name is farhan"
 let FirstSpaceIndex = str.indexOf(" ")
-let result = str.substring(FirstSpaceIndex +1)
+let result = str.substring(FirstSpaceIndex + 1)
 console.log(result);
 
 
@@ -26,8 +26,8 @@ console.log(result);
 let text = "30 days of javascript."
 let result3 = text.split(" ")
 console.log(result3);
-console.log(typeof(text));
-console.log(typeof(result3)); // object because in javascript array is an object.
+console.log(typeof (text));
+console.log(typeof (result3)); // object because in javascript array is an object.
 
 //! Check if the string contains a word Script using includes() method
 console.log(challenge.includes("script"));
@@ -69,7 +69,7 @@ console.log(firstPosition);
 
 //! Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
 let trimmedchallenge = challenge.trim();  // ' 30 Days Of JavaScript '  -> 30 Days Of JavaScript bana deta hai 
-console.log(trimmedchallenge);  
+console.log(trimmedchallenge);
 
 //! Use startsWith() method with the string 30 Days Of JavaScript and make the result true.
 console.log(challenge.startsWith("3"));
@@ -94,17 +94,17 @@ console.log("Question no 3-------------");
 
 let num1 = Number('10');
 let num2 = 10;
-console.log(typeof(num1));
-console.log(typeof(num2));
+console.log(typeof (num1));
+console.log(typeof (num2));
 
 if (num1 === num2) {
-    console.log('num1 is same as num2 2');
-    
-    
+  console.log('num1 is same as num2 2');
+
+
 }
-else{
-    console.log('num1 and num2 are not same');
-    
+else {
+  console.log('num1 and num2 are not same');
+
 }
 
 //! Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
@@ -134,7 +134,7 @@ console.log(sentence2.includes('jargon'));
 //! Generate a random number between 0 and 100 inclusively.
 console.log("Question no 7------------");
 
-let randomnum = Math.floor(Math.random() * 101 );
+let randomnum = Math.floor(Math.random() * 101);
 console.log(randomnum);
 
 //! Generate a random number between 50 and 100 inclusively.
@@ -151,7 +151,7 @@ console.log("Question no 9-------------------------------------");
 
 let min = 0;
 let max = 255;
-let randomnum2 = Math.floor(Math.random() * (max - min +1)) + min 
+let randomnum2 = Math.floor(Math.random() * (max - min + 1)) + min
 console.log(randomnum2);
 
 //! Access the 'JavaScript' string characters using a random number.
@@ -165,7 +165,7 @@ console.log(`Character at random Index: ${randomchar}`);
 
 
 //! pattern bana do 
- console.log("Question no 11------------------------------------------------");
+console.log("Question no 11------------------------------------------------");
 
 console.log("1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n\     5 1 5 25 125");
 
@@ -176,7 +176,7 @@ console.log("Question no 12-----------------------------------------------------
 let sentence4 = 'You cannot end a sentence with because because because is a conjunction';
 
 let startIndex = sentence4.indexOf("because");
-let phrase = sentence4.substr(startIndex,23);
+let phrase = sentence4.substr(startIndex, 23);
 console.log(phrase);
 
 
@@ -188,15 +188,15 @@ console.log(you);
 
 //! Declare an array with more than 5 number of elements.
 
-let num4 = [1,2,3,4,5,6,7];
+let num4 = [1, 2, 3, 4, 5, 6, 7];
 console.log(num4);
 console.log(num4.length);
 
 //! Get the first item, the middle item and the last item of the array
 
-console.log("first element",num4[0]);
-console.log("Middle element",num4[Math.floor(num4.length/2)]);
-console.log("last Index",num4.length - 1);
+console.log("first element", num4[0]);
+console.log("Middle element", num4[Math.floor(num4.length / 2)]);
+console.log("last Index", num4.length - 1);
 console.log("last Item", num4[num4.length - 1]);
 
 //! Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
@@ -213,62 +213,126 @@ console.log("Number of companies:", itcompanies.length);
 console.log('Question no 9 ---------------------\n');
 
 console.log("First company", itcompanies[0]);
-let middleIndex = Math.floor(itcompanies.length/2)
+let middleIndex = Math.floor(itcompanies.length / 2)
 console.log("Middle company", itcompanies[middleIndex]);
-console.log("LastCompany",itcompanies[itcompanies.length -1]);
+console.log("LastCompany", itcompanies[itcompanies.length - 1]);
 
 console.log('Question no 10 ---------------------\n');
 //! Print out each company.
 
-itcompanies.forEach(function(company){
-    console.log(company);
-    
+itcompanies.forEach(function (company) {
+  console.log(company);
+
 })
 
 console.log('Question no 11 ---------------------\n');
 
-  //! Change each company name to uppercase one by one and print them out
+//! Change each company name to uppercase one by one and print them out
 
-  itcompanies.forEach(function(company){
-    console.log(company.toUpperCase());
-    
-  })
+itcompanies.forEach(function (company) {
+  console.log(company.toUpperCase());
 
+})
 
-
-
+console.log('Question no 12 ---------------------\n');
 
 
+//! Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies
+
+let sentence6 = itcompanies.join(", ") + "are big it companies"
+console.log(sentence6);
 
 
+//! Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+
+console.log('Question no 13---------------------\n');
+let companyToSearch = "Google"
+if (itcompanies.includes(companyToSearch)) {
+  console.log(companyToSearch + " exists in the array. ");
+}
+else {
+  console.log(companyToSearch + "is not found ");
+}
+
+//! Filter out companies which have more than one 'o' without the filter method.
+console.log('Question no 14 ---------------------\n');
+let companiesWithMoreThanOneO = [];
+
+for (let i = 0; i < itcompanies.length; i++) {
+  let company = itcompanies[i];
 
 
+  let oCount = company.split("o").lenght - 1
+
+  if (oCount > 1) {
+    companiesWithMoreThanOneO.push(company);
+  }
+}
+
+console.log(companiesWithMoreThanOneO);
+
+//! Sort the array using sort() method.
+console.log('Question no 15 ---------------------\n');
+itcompanies.sort();
+console.log(itcompanies);
+
+//! Reverse the array using reverse() method.
+console.log('Question no 16 ---------------------\n');
+itcompanies.reverse();
+console.log(itcompanies);
 
 
+//! Slice out the first 3 companies from the array.
+console.log('Question no 17 ---------------------\n');
 
+let firstThree = itcompanies.slice(0,3);
+console.log(firstThree); // uapr ke code ke change ke baad out put change ho gaya hai 
 
+//! Slice out the last 3 companies from the array.
+console.log('Question no 18 ---------------------\n');
 
+let lastThree = itcompanies.slice(-3);
+console.log(lastThree);
 
+//! Slice out the middle IT company or companies from the array
+console.log('Question no 19 ---------------------\n');
 
+let middle =[]
+let midIndex = Math.floor(itcompanies.length/2) // it will appear 3 as the lenght is seven
 
+itcompanies.splice(midIndex,1)
+console.log(itcompanies);
 
+//! Remove the first IT company from the array.
 
+console.log('Question no 20 ---------------------\n');
+itcompanies.shift(); // removes "Facebook"
+console.log(itcompanies);
 
+//! Remove the middle IT company or companies from the array
+console.log('Question no 21 ---------------------\n');
 
+let midIndex1 = Math.floor(itcompanies.length / 2);
 
+if (itcompanies.length % 2 === 0) {
+  // Even number of items → remove 2 middle companies
+  itcompanies.splice(midIndex1 - 1, 2);
+} else {
+  // Odd number of items → remove 1 middle company
+  itcompanies.splice(midIndex1, 1);
+}
 
+console.log(itcompanies);
 
+//! Remove the last IT company from the array.
+console.log('Question no 21 ---------------------\n');
+itcompanies.pop();
+console.log(itcompanies);
 
-
-
-
-
-
-
-
-
-
-
+//! Remove all IT companies.
+console.log('Question no 22---------------------\n');
+itCompanies = [];
+console.log(itCompanies);
 
 
 
