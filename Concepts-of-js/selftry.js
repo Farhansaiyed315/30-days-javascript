@@ -369,6 +369,22 @@ console.log(sum(10, 25));
 //! An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle
 console.log('Question no 4 ---------------------\n');
 
+function AreaofRectangle(lenght,width){
+  return lenght * width;
+}
+console.log(AreaofRectangle(5,5));
+
+//! A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). Write a function which calculates perimeterOfRectangle
+
+console.log('Question no 5 ---------------------\n');
+
+function PerimeterOfRectangle(lenght,width){
+  return lenght +  width;
+}
+console.log(PerimeterOfRectangle(5,5));
+
+
+
 
 
  
