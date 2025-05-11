@@ -383,6 +383,13 @@ function PerimeterOfRectangle(lenght,width){
 }
 console.log(PerimeterOfRectangle(5,5));
 
+//! Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
+console.log('Question no 5 ---------------------\n');
+
+function  areaOfCircle(radius){
+  return Math.P * radius * radius;
+}
+console.log(areaOfCircle(5));
 
 
 
