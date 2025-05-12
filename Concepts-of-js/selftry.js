@@ -285,7 +285,7 @@ console.log(itcompanies);
 //! Slice out the first 3 companies from the array.
 console.log('Question no 17 ---------------------\n');
 
-let firstThree = itcompanies.slice(0,3);
+let firstThree = itcompanies.slice(0, 3);
 console.log(firstThree); // uapr ke code ke change ke baad out put change ho gaya hai 
 
 //! Slice out the last 3 companies from the array.
@@ -297,10 +297,10 @@ console.log(lastThree);
 //! Slice out the middle IT company or companies from the array
 console.log('Question no 19 ---------------------\n');
 
-let middle =[]
-let midIndex = Math.floor(itcompanies.length/2) // it will appear 3 as the lenght is seven
+let middle = []
+let midIndex = Math.floor(itcompanies.length / 2) // it will appear 3 as the lenght is seven
 
-itcompanies.splice(midIndex,1)
+itcompanies.splice(midIndex, 1)
 console.log(itcompanies);
 
 //! Remove the first IT company from the array.
@@ -340,9 +340,9 @@ console.log("Functions");
 //! Declare a function fullName and it print out your full name.
 console.log('Question no 1 ---------------------\n');
 
-function FullName(){
+function FullName() {
   console.log("Farhan Saiyed");
-  
+
 }
 FullName()
 
@@ -350,50 +350,128 @@ FullName()
 //! Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
 console.log('Question no 2 ---------------------\n');
 
-function FullNames(FirstName,LastName){
-  return FirstName +" "+ LastName;
+function FullNames(FirstName, LastName) {
+  return FirstName + " " + LastName;
 
 }
-console.log(FullNames("Farhan" , "Saiyed"));
+console.log(FullNames("Farhan", "Saiyed"));
 
 
 //! Declare a function addNumbers and it takes two two parameters and it returns sum.
 console.log('Question no 3 ---------------------\n');
 
-function sum(a , b)
-{
-return a + b;
+function sum(a, b) {
+  return a + b;
 }
 console.log(sum(10, 25));
 
 //! An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle
 console.log('Question no 4 ---------------------\n');
 
-function AreaofRectangle(lenght,width){
+function AreaofRectangle(lenght, width) {
   return lenght * width;
 }
-console.log(AreaofRectangle(5,5));
+console.log(AreaofRectangle(5, 5));
 
 //! A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). Write a function which calculates perimeterOfRectangle
 
 console.log('Question no 5 ---------------------\n');
 
-function PerimeterOfRectangle(lenght,width){
-  return lenght +  width;
+function PerimeterOfRectangle(lenght, width) {
+  return lenght + width;
 }
-console.log(PerimeterOfRectangle(5,5));
+console.log(PerimeterOfRectangle(5, 5));
 
 //! Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
-console.log('Question no 5 ---------------------\n');
+console.log('Question no 6 ---------------------\n');
 
-function  areaOfCircle(radius){
+function areaOfCircle(radius) {
   return Math.P * radius * radius;
 }
 console.log(areaOfCircle(5));
 
 
+//! Circumference of a circle is calculated as follows: circumference = 2πr. Write a function which calculates circumOfCircle
+console.log('Question no 7 ---------------------\n');
+
+function circumOfcircle(radius) {
+  return 2 * Math.PI * radius;
+}
+console.log(circumOfcircle(5));
+
+//! Density of a substance is calculated as follows:density= mass/volume. Write a function which calculates density.
+
+console.log('Question no 8 ---------------------\n');
+
+function calculateDensity(mass, volume) {
+  return mass / volume;
+}
+
+console.log(calculateDensity(10, 2));
 
 
+//! Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, speed.
+
+console.log('Question no 9 ---------------------\n');
+
+function calculatespeed(distance, time) {
+  return distance / time;
+
+}
+console.log(calculatespeed(100, 2));
+
+
+//! Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
+
+console.log('Question no 10 ---------------------\n');
+
+function calculateWeight(mass, gravity) {
+  return mass * gravity;
+}
+console.log(calculateWeight(10, 9.8));
+
+//! Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer
+
+console.log('Question no 11 ---------------------\n');
+
+function checkseason(month) {
+  if (['December', 'January', 'February'].includes(month)) {
+    return "Winter"
+  } else if (['March', 'April', 'May'].includes(month)) {
+    return 'Spring';
+  }
+  else if (['June', 'July', 'August'].includes(month)) {
+    return 'Summer';
+  } else if (['September', 'October', 'November'].includes(month)) {
+    return 'Autumn';
+  } else {
+    return 'Invalid month';
+  }
+}
+
+console.log( checkseason('March'));
+console.log(checkseason('July'));
+
+//! Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+//! console.log(findMax(0, 10, 5)) 10
+//! console.log(findMax(0, -10, -2)) 0
+
+
+console.log('Question no 12 ---------------------\n');
+
+
+function findMax(a, b, c) {
+    if (a >= b && a >= c) {
+        return a;
+    } else if (b >= a && b >= c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+
+console.log(findMax(0, 10, 5));  
+console.log(findMax(0, -10, -2));
 
 
 
