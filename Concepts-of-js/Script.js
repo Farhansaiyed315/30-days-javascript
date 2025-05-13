@@ -1008,22 +1008,100 @@ console.log(b2); // 2
 
 //?-------------------------------------------------------------------------------------------------------------
 
-//! DAY-12 REGULAR EXPRESSION Last mein karege aaram se koi zyada need bhi nahi hai as its not a building bliock .......................----------------------...............----------------------..............---------
+//! DAY-12 REGULAR EXPRESSION Last mein karege aaram se koi zyada need bhi nahi hai as its not a building block .......................----------------------...............----------------------..............----------
+
+//! DAY-13 CONSOLE OBJECT METHODS.................------------------...................----------------------...
+
+//? console.warn().........................
+
+console.log('DAY-13 CONSOLE OBJECT METHODS.................------------------');
 
 
+//? We use console.warn() to give warning on browser. For instance to inform or warn deprecation of version of a package or bad practices. 
+
+//? console.warn() --- 	Yellow	---  Warning – not serious, just a caution
+
+//? When to Use console.warn():
+//? When something is not wrong, but could lead to problems later.
+
+//? Example: When a deprecated function is used, or a user input is risky.
+
+//? console.error()......................
+
+console.log(' The console.error() method shows an error messages.');
+
+//?  The console.error() method shows an error messages.
+
+//! console.error() --- 	Red	---  Error –  serious isssues
+
+//!  console.table().........................
+//? The console.table() method display data as a table on the console. Displays tabular data as a table. The console.table() takes one required argument data, which must be an array or an object, and one additional optional parameter columns
 
 
+//? const user = { name: 'Asabeneh', title: 'Programmer', country: 'Finland', city: 'Helsinki', age: 250
+//? }
+//? console.table(user)
 
 
+//!  console.time()
+
+ console.log('console.time(.................................)')
+//? Starts a timer you can use to track how long an operation takes. You give each timer a unique name, and may have up to 10,000 timers running on a given page. When you call console.timeEnd() with the same name, the browser will output the time, in milliseconds, that elapsed since the timer was started.
+console.time("fetchTime");
+
+// Simulating a function that takes time
+for (let i = 0; i < 1000000; i++) {
+  // some task
+}
+
+console.timeEnd("fetchTime");
 
 
+//! console.info()
+    console.log('console.info()............');
+    
+
+//? console.info() It displays information message on browser console.
+//? console.info('30 Days Of JavaScript challenge is trending on Github')
+//?  console.info('30 Days Of fullStack challenge might be released')
+//?  console.info('30 Days Of HTML and CSS challenge might be released')
+//? Not used in final production code — only for testing and debugging.
 
 
- 
+//! console.assert()
+
+console.log('console.assert()............');
+
+//? The console.assert() methods writes an error message to the console if the assertion is false. If the assertion is true, nothing happens. The first parameter is an assertion expression. If this expression is false, an Assertion failed error message will be displayed
+
+console.assert(3 > 4, '3 is not greater than 4')
+
+//! console.group()
+console.log('console.group(...................)');
 
 
+//? After calling console.group(), all subsequent console.log(), console.info(), console.warn(), and other messages will be nested inside the group. To close the group and return to the previous logging level, use console.groupEnd().
+
+console.group("User Information");
+console.log("Name: John");
+console.log("Age: 30");
+console.log("Location: USA");
+console.groupEnd();
+
+console.log('console.count()..............');
+
+//? console.count() Method in JavaScript
+//? The console.count() method is used to count the number of times a specific label has been logged to the //? console. It helps in tracking how many times a particular event or function is called.
 
 
+console.count("click");
+console.count("click");
+console.count("click");
+
+console.log('console.clear()......................');
+//! console.clear()
+
+//? The console.clear() cleans the browser console.
 
 
 
