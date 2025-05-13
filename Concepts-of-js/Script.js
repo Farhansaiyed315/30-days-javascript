@@ -980,18 +980,46 @@ myMap5.set('age', 22);
 console.log(myMap5.has('name')); // true
 console.log(myMap5.has('city')); // false..........
 
+//! DAY-11 DESTRUCTURING AND SPREADING...........-----------------.................-----------------............
+console.log('DAY-11 DESTRUCTURING AND SPREADING...........-----------------...........');
+
+// Destructuring is a feature in JavaScript that allows you to unpack values from arrays or properties from objects into separate variables in a simple and clean way.
+
+// Destructuring means breaking a bigger thing into smaller parts and saving those parts in separate variables.
+
+//? Normal Way (Without Destructuring):
+
+const arr = [1, 2, 3];
+
+const a1 = arr[0];
+const b1 = arr[1];
+console.log(a1); 
+console.log(b1); 
+
+//? With Destructuring:...............
+
+const arr2 = [1, 2, 3];
+
+const [a2, b2] = arr;  // auto-unpacks first 2 values
+console.log(a2); // 1
+console.log(b2); // 2
+
+//! Not much to learn its a not a concept but a way to write cleaner code.
+
+//?-------------------------------------------------------------------------------------------------------------
+
+//! DAY-12 REGULAR EXPRESSION Last mein karege aaram se koi zyada need bhi nahi hai as its not a building bliock .......................----------------------...............----------------------..............---------
+
+
+
+
+
+
+
+
 
 
  
-
-
-
-
-
-
-
-
-
 
 
 
