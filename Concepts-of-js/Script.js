@@ -1138,4 +1138,33 @@ try {
 }
 
 
+//! DAY-15 CLASSES............------------..............----------------................------------------....................---
 
+// Step 1: Create the class
+class Car {
+  constructor(brand, model, year) {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+  }
+
+  // Step 2: Define a method
+  startEngine() {
+    console.log(`${this.brand} ${this.model} engine started.`);
+  }
+
+  showDetails() {
+    console.log(`Brand: ${this.brand}, Model: ${this.model}, Year: ${this.year}`);
+  }
+}
+
+// Step 3: Create objects from the class
+const car1 = new Car("Toyota", "Fortuner", 2023);
+const car2 = new Car("Hyundai", "i20", 2022);
+
+// Step 4: Use the methods
+car1.startEngine();   // Output: Toyota Fortuner engine started.
+car1.showDetails();   // Output: Brand: Toyota, Model: Fortuner, Year: 2023
+
+car2.startEngine();   // Output: Hyundai i20 engine started.
+car2.showDetails();   // Output: Brand: Hyundai, Model: i20, Year: 2022n
