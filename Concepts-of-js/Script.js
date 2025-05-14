@@ -503,8 +503,8 @@ console.log("\n\n\n\,"),
 
 
 
-//!  DAY-8 Scopes and OBJECTS............----------------................----------------..............----------
-console.log("DAY-8 Scopes and OBJECTS.........\n");
+  //!  DAY-8 Scopes and OBJECTS............----------------................----------------..............----------
+  console.log("DAY-8 Scopes and OBJECTS.........\n");
 
 
 
@@ -520,7 +520,7 @@ const person1 = {
   LastName: ['Saiyed'],
   Class: "10",
   City: "Kolkata",
-  ph:"80015555"
+  ph: "80015555"
 }
 
 //? Getting values from an object. 
@@ -558,7 +558,7 @@ console.log(values);       //  Object.values:To get values of an object as an ar
 
 const entries = Object.entries(student);
 console.log(entries);                            //  It returns an array of arrays [key, value].
-                                                // The order is same as keys were inserted.
+// The order is same as keys were inserted.
 
 console.log(student.hasOwnProperty("name"));    // It only checks own properties, not prototype properties.
 
@@ -593,7 +593,7 @@ function calculate(a, b, callback) {
   callback(result);
 }
 
-calculate(5, 3, function(sum) {
+calculate(5, 3, function (sum) {
   console.log("Sum is: " + sum);
 });
 
@@ -683,7 +683,7 @@ fruits2.forEach(printFruit);
 // Old array remains same
 let numbers = [1, 2, 3, 4, 5];
 
-let doubleNumbers = numbers.map(function(num) {
+let doubleNumbers = numbers.map(function (num) {
   return num * 2;
 });
 
@@ -696,7 +696,7 @@ console.log(doubleNumbers);
 
 let numbers1 = [1, 2, 3, 4, 5, 6];
 
-let evenNumbers = numbers1.filter(function(num) {
+let evenNumbers = numbers1.filter(function (num) {
   return num % 2 === 0; // condition: only even numbers
 });
 
@@ -709,7 +709,7 @@ console.log(evenNumbers);
 
 let numbers3 = [1, 2, 3, 4, 5];
 
-let total = numbers3.reduce(function(acc, num) {
+let total = numbers3.reduce(function (acc, num) {
   return acc + num;
 }, 0);
 
@@ -721,7 +721,7 @@ console.log(total); // 15
 
 let numbers4 = [2, 4, 6, 8];
 
-let areAllEven = numbers4.every(function(num) {
+let areAllEven = numbers4.every(function (num) {
   return num % 2 === 0; // Check if even
 });
 
@@ -733,7 +733,7 @@ console.log(areAllEven);
 
 let numbers5 = [5, 12, 8, 130, 44];
 
-let found = numbers5.find(function(num) {
+let found = numbers5.find(function (num) {
   return num > 10; // condition
 });
 
@@ -745,7 +745,7 @@ console.log(found);
 //!  Find the index (position) of the first element that matches a condition.
 let numbers6 = [5, 12, 8, 130, 44];
 
-let index = numbers6.findIndex(function(num) {
+let index = numbers6.findIndex(function (num) {
   return num > 10; // condition
 });
 
@@ -809,7 +809,7 @@ console.log(companies);
 const numbers10 = [1, 2, 3, 2, 4, 1];
 const uniqueNumbers = new Set(numbers10);
 
-console.log(uniqueNumbers); 
+console.log(uniqueNumbers);
 
 
 //? Adding an element to a set.....................
@@ -830,7 +830,7 @@ const fruits11 = new Set(["apple", "banana", "mango"]);
 
 fruits11.delete("banana"); // Removes 'banana'
 
-console.log(fruits11); 
+console.log(fruits11);
 
 //? Checking an element in the set.........................
 
@@ -850,7 +850,7 @@ const fruits13 = new Set(["apple", "banana", "mango"]);
 
 fruits13.clear(); // Clears all elements in the Set
 
-console.log(fruits13); 
+console.log(fruits13);
 
 //? Union of sets......................................
 
@@ -940,8 +940,8 @@ let data = [
 
 let myMap1 = new Map(data);
 
-console.log(myMap1.get('name')); 
-console.log(myMap1.get('city')); 
+console.log(myMap1.get('name'));
+console.log(myMap1.get('city'));
 
 
 
@@ -993,8 +993,8 @@ const arr = [1, 2, 3];
 
 const a1 = arr[0];
 const b1 = arr[1];
-console.log(a1); 
-console.log(b1); 
+console.log(a1);
+console.log(b1);
 
 //? With Destructuring:...............
 
@@ -1045,7 +1045,7 @@ console.log(' The console.error() method shows an error messages.');
 
 //!  console.time()
 
- console.log('console.time(.................................)')
+console.log('console.time(.................................)')
 //? Starts a timer you can use to track how long an operation takes. You give each timer a unique name, and may have up to 10,000 timers running on a given page. When you call console.timeEnd() with the same name, the browser will output the time, in milliseconds, that elapsed since the timer was started.
 console.time("fetchTime");
 
@@ -1058,8 +1058,8 @@ console.timeEnd("fetchTime");
 
 
 //! console.info()
-    console.log('console.info()............');
-    
+console.log('console.info()............');
+
 
 //? console.info() It displays information message on browser console.
 //? console.info('30 Days Of JavaScript challenge is trending on Github')
@@ -1104,6 +1104,38 @@ console.log('console.clear()......................');
 //? The console.clear() cleans the browser console.
 
 
+//! DAY-14 ERROR HANDLING-----------.................----------------------....................---------------..
+console.log('DAY-14 ERROR HANDLING-----------.................');
+
+
+// Type                                 	Meaning
+
+// Syntax Error                 	Mistake in code structure (like missing })
+// Reference Error	              Using a variable that doesn’t exist
+// Type Error	                  Performing invalid operations on a value
+
+try {
+  let data = "Success";
+  console.log(data);
+} catch (e) {
+  console.log("Error:", e);
+} finally {
+  console.log("This always runs");
+}
+
+
+function divide(a, b) {
+  if (b === 0) {
+    throw new Error("Cannot divide by zero");
+  }
+  return a / b;
+}
+
+try {
+  console.log(divide(10, 0));
+} catch (e) {
+  console.log("Custom Error:", e.message);
+}
 
 
 
