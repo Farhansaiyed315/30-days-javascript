@@ -1140,6 +1140,8 @@ try {
 
 //! DAY-15 CLASSES............------------..............----------------................------------------....................---
 
+console.log('Class in js basic ....................');
+
 // Step 1: Create the class
 class Car {
   constructor(brand, model, year) {
@@ -1168,3 +1170,179 @@ car1.showDetails();   // Output: Brand: Toyota, Model: Fortuner, Year: 2023
 
 car2.startEngine();   // Output: Hyundai i20 engine started.
 car2.showDetails();   // Output: Brand: Hyundai, Model: i20, Year: 2022n
+
+
+//? Class Instantiation..............
+
+console.log('Class instantiation....................');
+// Class Instantiation means creating an object (instance) from a class using the new keyword.
+
+class Carl {
+  constructor(brand, model) {
+    this.brand = brand;
+    this.model = model;
+  }
+
+  displayInfo() {
+    console.log(`Carl: ${this.brand} ${this.model}`);
+  }
+}
+
+const car3 = new Carl("Toyota", "Innova");
+const car4 = new Carl("Honda", "City");
+
+car3.displayInfo(); 
+car4.displayInfo();  
+
+//? Class Constructor
+console.log('Class Constructor..............');
+
+// A constructor is a special method in a class that is automatically called when a new object is created using the new keyword.
+
+// It is used to initialize properties of the object.
+
+class Student {
+  constructor(name, age, course) {
+    this.name = name;
+    this.age = age;
+    this.course = course;
+  }
+
+  introduce() {
+    console.log(`My name is ${this.name}, I am ${this.age} years old and I study ${this.course}.`);
+  }
+}
+
+const student1 = new Student("Farhan", 22, "BCA");
+student1.introduce();  
+
+//? Default values with constructor
+console.log('Default values with constructor................');
+// In JavaScript, you can give default values to constructor parameters in case no value is passed during object creation and it is called Defalult value construcotr. 
+
+class User {
+  constructor(name = "Guest", age = 18) {
+    this.name = name;
+    this.age = age;
+  }
+
+  showInfo() {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+  }
+}
+
+// Without passing arguments
+const user1 = new User();
+user1.showInfo();  
+
+// With arguments
+const user2 = new User("Farhan", 22);
+user2.showInfo();  
+
+//? Class methods
+console.log('Class methods...............');
+// Class methods are functions defined inside a class that can be used by objects created from that class.
+// They usually work on the object’s data using this.
+
+class Student1 {
+  constructor(name, course) {
+    this.name = name;
+    this.course = course;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+
+  showCourse() {
+    console.log(`I am studying ${this.course}`);
+  }
+}
+
+const student4 = new Student1("Farhan", "BCA"); 
+
+student4.greet();       
+student4.showCourse(); 
+
+//? Properties with initial value
+console.log('Properties with initial value..............');
+
+// baaad mein dekhna hai
+
+
+//? getter
+console.log('getter................');
+
+// A getter is a special method that lets you access a property like a variable, but behind the scenes, it runs a function.
+
+// It is useful when:
+
+// You want to format a value
+
+// You want to calculate something dynamically
+
+// You want to protect direct access to raw data
+
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  // Getter
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
+
+const person2 = new Person("Farhan", "Saiyed");
+
+console.log(person2.fullName);  
+
+//? setter
+console.log('setter...................');
+
+// A setter is a special method in a class that lets you set or update the value of a property like a normal assignment, but internally it runs a function.
+
+class User8 {
+  constructor(name) {
+    this._name = name;
+  }
+
+  // Getter
+  get name() {
+    return this._name;
+  }
+
+  // Setter
+  set name(newName) {
+    this._name = newName;
+  }
+}
+
+const user3 = new User("Farhan");
+
+console.log(user3.name);  // Output: Farhan
+
+user3.name = "Ahmed";     // Calls the setter
+console.log(user3.name);  // Output: Ahmed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
