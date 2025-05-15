@@ -1322,21 +1322,68 @@ class User8 {
 
 const user3 = new User("Farhan");
 
-console.log(user3.name);  // Output: Farhan
+console.log(user3.name);  
 
-user3.name = "Ahmed";     // Calls the setter
-console.log(user3.name);  // Output: Ahmed
-
-
+user3.name = "Ahmed";    
+console.log(user3.name); 
 
 
+//? Static method
+console.log('Static method..................');
+
+// A static method is a method that belongs to the class itself, not to the objects (instances) created from the class.
+
+// You call a static method using the class name, not the object.
+
+class MathUtils {
+  static add(a, b) {
+    return a + b;
+  }
+}
+
+console.log(MathUtils.add(5, 3)); 
+
+// You CANNOT call it on an object:
+// const obj = new MathUtils();
+// obj.add(5, 3);  Error
+
+//? Inheritance
+console.log('Inheritance....................');
+
+// Inheritance means one class  can inherit (Child) properties and methods from another class (parent).
+// It helps in code reusability and organization.
+
+// 🔹 Parent class
+class Student10 {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hi, I'm ${this.name}, ${this.age} years old.`);
+  }
+}
+
+class CollegeStudent extends Student10 {
+  constructor(name, age, course) {
+    super(name, age); 
+    this.course = course;
+  }
+
+  showCourse() {
+    console.log(`I'm studying ${this.course}`);
+  }
+}
 
 
+const student9 = new CollegeStudent("Farhan", 20, "BCA");
+
+student9.greet();      
+student9.showCourse();  
 
 
-
-
-
+// Overriding same as c and c++. 
 
 
 
