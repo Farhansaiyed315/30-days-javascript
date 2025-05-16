@@ -1385,7 +1385,35 @@ student9.showCourse();
 
 // Overriding same as c and c++. 
 
+//! DAY-16 JSON..............-----------------------.........................----------------------------.......
+console.log('DAY-16 JSON....................');
 
+// Lets lern bout json however we have to recall destructor from the previous day to start json The full form of json is javascript object notation. 
+
+//?Dealing with objects without using Destructor. 
+
+const Course = {
+
+  CourseName : 'js',
+  CoursePrice : '800',
+  CourseTeacher : 'Farhan'
+}
+
+console.log(Course.CourseName);           
+console.log(Course. CoursePrice);
+console.log(Course.CourseTeacher);
+
+//?Dealing with objects using Destructor.
+
+// const  {kya value extract karni hai } = konsay object se karni hai 
+const {CourseName} = Course;
+console.log(CourseName);
+
+const {CoursePrice} = Course;
+console.log(CoursePrice);
+
+//! Now lets learn bout json. 
+console.log('JSON.......................................');
 
 
 
