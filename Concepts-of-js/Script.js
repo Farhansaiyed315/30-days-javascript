@@ -1412,10 +1412,42 @@ console.log(CourseName);
 const {CoursePrice} = Course;
 console.log(CoursePrice);
 
-//! Now lets learn bout json. 
+//? Now lets learn bout json. 
 console.log('JSON.......................................');
 
+//? Converting JSON to JavaScript Object
+console.log('Converting JSON to JavaScript Object........................');
 
+//? When we want to change the JSON to an object we parse the JSON using JSON.parse().
+//? When we want to change the object to JSON we use JSON.stringify().
+
+// Suppose we have this JSON string
+let jsonData = '{"name": "Farhan", "age": 21, "isStudent": true}';
+
+// Convert JSON string to JS object
+let jsObject = JSON.parse(jsonData);
+
+console.log(jsObject);
+
+//? object to JSON we use JSON.stringify().
+
+let user = {
+  name: "Farhan",
+  age: 21,
+  isStudent: true
+};
+
+let jsonData2 = JSON.stringify(user);
+
+console.log(jsonData2);
+
+
+
+
+
+
+
+ 
 
 
 
