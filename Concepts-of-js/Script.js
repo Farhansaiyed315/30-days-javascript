@@ -1442,6 +1442,52 @@ let jsonData2 = JSON.stringify(user);
 console.log(jsonData2);
 
 
+//! Day 17 Web Storage objects:.......--------------.............----------------..............--------------...
+console.log('Web Storage objects:.....................');
+//? localStorage – Permanent Storage
+console.log('localStorage – Permanent Storage..............................');
+const { log } = require('console');
+// Import the localStorage simulator
+const { LocalStorage } = require('node-localstorage');
+
+// Create a localStorage instance with a directory to save data
+const localStorage = new LocalStorage('./scratch');
+
+// Store data
+localStorage.setItem("username", "Farhan");
+
+// Get data
+const name = localStorage.getItem("username");
+console.log("Username from localStorage:", name);
+
+// Optional: Remove or clear
+// localStorage.removeItem("username");
+// localStorage.clear();
+
+// //? Session storage............
+ console.log('Session storage............Browser only');
+
+// // Store data
+// sessionStorage.setItem("score", "100");
+
+// // Get data
+// let score = sessionStorage.getItem("score");
+// console.log(score); // Output: 100
+
+// // Remove one item
+// sessionStorage.removeItem("score");
+
+// // Clear all
+// sessionStorage.clear();
+
+//! Feature	                         Browser	                          Node.js
+
+// localStorage	                     ✅ Yes	              ❌ Needs node-localstorage
+//? sessionStorage                   ✅ Yes	              ❌ Use a JS object for simulation
+
+
+
+
 
 
 
