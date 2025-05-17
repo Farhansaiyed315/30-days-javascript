@@ -1442,7 +1442,7 @@ let jsonData2 = JSON.stringify(user);
 console.log(jsonData2);
 
 
-//! Day 17 Web Storage objects:.......--------------.............----------------..............--------------...
+//! Day 17 Web Storage objects:.......--------------.............----------------............
 console.log('Web Storage objects:.....................');
 //? localStorage – Permanent Storage
 console.log('localStorage – Permanent Storage..............................');
@@ -1484,6 +1484,42 @@ console.log("Username from localStorage:", name);
 
 // localStorage	                     ✅ Yes	              ❌ Needs node-localstorage
 //? sessionStorage                   ✅ Yes	              ❌ Use a JS object for simulation
+
+//! DAY-18 PROMISE..............
+console.log('Promises...................');
+
+//  Promise States:
+// Pending – the initial state
+
+// Fulfilled – the operation completed successfully
+
+// Rejected – the operation failed
+
+let promise = new Promise(function (resolve, reject) {
+  // do something...
+  if (true) { // Replace 'true' with your actual success condition
+    resolve("Success");
+  } else {
+    reject("Error");
+  }
+});
+
+//? Promise Constructor...........
+
+// | Feature    | `Promise`                                | `Promise constructor`                    |
+// | ---------- | ---------------------------------------- | ---------------------------------------- |
+// | What it is | A **built-in object/type** in JS         | A **function** to create a new Promise   |
+// | Used for   | Representing async results               | Creating a custom promise                |
+// | Syntax     | `let p = someFunctionReturningPromise()` | `let p = new Promise((res, rej) => {})`  |
+// | Used by    | Both browser & developers                | Developers (you) use it to make promises |
+
+
+
+// let myPromise = new Promise(function (resolve, reject) {
+//   resolve("Done");
+// });
+
+
 
 
 
