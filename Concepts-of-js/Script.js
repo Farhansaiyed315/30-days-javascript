@@ -1519,19 +1519,89 @@ let promise = new Promise(function (resolve, reject) {
 //   resolve("Done");
 // });
 
+//? The Fetch API is a modern way to make HTTP requests (like GET, POST, etc.) from the browser — it’s how your website talks to a server or API to get or send data.
+
+// In simple words:
+// "Fetch API is like Swiggy delivery but for data!" You order (make a request), and it brings your food (response data)
+
+fetch('https://api.example.com/data')
+  .then(response => response.json()) // convert the response to JSON
+  .then(data => {
+    console.log(data); // do something with the data
+  })
+  .catch(error => {
+    console.error('Error:', error); // if something goes wrong
+  });
+
+
+//? Making a post request. 
+
+  fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    title: 'Hello',
+    body: 'This is a post',
+    userId: 1
+  })
+})
+  .then(response => response.json())
+  .then(data => console.log(data));
 
 
 
+  //  Using async/await (cleaner way)
+  async function getJoke() {
+  try {
+    const response = await fetch('https://official-joke-api.appspot.com/random_joke');
+    const joke = await response.json();
+    console.log(`${joke.setup} - ${joke.punchline}`);
+  } catch (error) {
+    console.log("Error fetching joke:", error);
+  }
+}
+
+getJoke();
 
 
+// Use async before a function to make it return a Promise.
 
+// Use await inside an async function to wait for the result of a Promise.
 
+//  Old Way: Using .then()
 
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
 
+// New Way: Using async/await
+  
+  async function getData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log("Something went wrong:", error);
+  }
+}
 
- 
+getData();
 
+//  Another Example: Wait for Something to Happen
 
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
+async function doStuff() {
+  console.log("⏳ Waiting 2 seconds...");
+  await wait(2000);
+  console.log("✅ Done waiting!");
+}
 
+doStuff();
 
