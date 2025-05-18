@@ -1605,3 +1605,16 @@ async function doStuff() {
 
 doStuff();
 
+
+
+//! Rest of he javascript which i know 
+
+// DOM
+// Event Listners
+
+//! Rest of the v.advance javascript which i wil learn after practicing and doing basics smoothly 
+
+// Lexical scope 
+// Closures. 
+
+console.log('The END.............--------------................------------------..................----------');
