@@ -20,5 +20,5 @@ from basics to real DOM interaction.
   How to Run??
 Clone this repo and open any folder in your browser:
 ```bash
-git clone https://github.com/Farhansaiyed315/30-days-javascript.git
+git clone https://github.com/Farhansaiyed315/30-days-javascript.git.
 
