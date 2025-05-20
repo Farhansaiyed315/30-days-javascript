@@ -1,4 +1,5 @@
 // Page number 64 Boolean and date datatypes exercise. 
+console.log('Question number one..............');
 
 let firstName = "Farhan";
 let lastName = "Saiyed";
@@ -13,6 +14,10 @@ console.log(typeof(age));         // number
 console.log(typeof(isMarried));   // boolean
 console.log(typeof(year));        // number
 
+//! Boolean value is either true or false.
+//! i. Write three JavaScript statement which provide truthy value.
+//! ii. Write three JavaScript statement which provide falsy value.
+console.log('Question number 4 ..............');
 
 let LiveAtHomeTown = false;
 let GotJob = false;
@@ -34,6 +39,8 @@ let num2 = 5;
 result = 5>4;
 
 console.log(result);
+//! Find the length of python and jargon and make a falsy comparison statement
+console.log('Question number 5 ka 7..............');
 
 let Lang1 = "python";
 let Lang2 = "jargon";
@@ -51,7 +58,8 @@ let CompareValue = Lang1 > Lang2;
 console.log("Is Lang1 alphabetically greater than Lang2? ", CompareValue);  // true
 
 
-
+//! Use the Date object to do the following activities
+console.log('Question number 7 ..............');
 const Now = new Date();
 const Year = Now.getFullYear();
 console.log(Year);
@@ -85,11 +93,5 @@ console.log(Now.getTime());
 // alert("area of a triangle is " + area)
 
 //! Need to work on browser enviroment and prompt 
-
-
-
-
-
-
 
 

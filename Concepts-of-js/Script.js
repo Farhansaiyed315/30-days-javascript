@@ -45,7 +45,7 @@ console.log(Math.floor(9.8));
 console.log(Math.ceil(9.8));
 console.log(Math.min(-5, 5, 6, 9, 1, 3, 0)); // returns the minimum value 
 
-console.log(Math.max(-5, 5, 6, 9, 1, 3, 0)); // returns the miximum value 
+console.log(Math.max(-5, 5, 6, 9, 1, 3, 0)); // returns the maximum value 
 
 const randomNum = Math.random();
 console.log(randomNum);
