@@ -8,16 +8,16 @@ This repo contains small projects and exercises I built learn core JavaScript co
 from basics to real DOM interaction.
 
   📚 Topics Covered
-  ✅ Variables, Data Types
-  ✅ Arrays & Objects
-  ✅ Functions (Arrow, IIFE, Callbacks)
-  ✅ DOM Manipulation
-  ✅ Events & Event Listeners
-  ✅ Array Methods (`map`, `filter`, `reduce`)
-  ✅ LocalStorage
-  ✅ APIs (basic) and more
+ ✅ Variables, Data Types
+ ✅ Arrays & Objects
+ ✅ Functions (Arrow, IIFE, Callbacks)
+ ✅ DOM Manipulation
+ ✅ Events & Event Listeners
+ ✅ Array Methods (`map`, `filter`, `reduce`)
+ ✅ LocalStorage
+ ✅ APIs (basic) and more
 
-  How to Run??
+ How to Run??
 Clone this repo and open any folder in your browser:
 ```bash
 git clone https://github.com/Farhansaiyed315/30-days-javascript.git.
