@@ -1,0 +1,24 @@
+<!-- Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript? Enter a number: 2 2 is an even number
+Enter a number: 9 9 is is an odd number -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Even or Odd Checker</title>
+</head>
+<body>
+  <h1>Even or Odd Checker 🔢</h1>
+
+  <script>
+    let num = prompt("Enter a number:");
+    num = Number(num); // Convert input to a number
+
+    if (num % 2 === 0) {
+      alert(`${num} is an even number`);
+    } else {
+      alert(`${num} is an odd number`);
+    }
+  </script>
+</body>
+</html>

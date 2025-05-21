@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Driving Age Check</title>
+</head>
+<body>
+    <!-- Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive' but if not 18 give another feedback stating to wait for the number of years he needs to turn 18.-->
+
+  <h1>Driving Age Checker 🚗</h1>
+  <p>Check your eligibility to drive based on your age!</p>
+
+  <script>
+    let age = prompt("Enter your age:");
+    age = Number(age); // convert string input to number
+
+    if (age >= 18) {
+      alert("You are old enough to drive 🚗");
+    } else {
+      let yearsLeft = 18 - age;
+      alert(`You need to wait ${yearsLeft} more year${yearsLeft > 1 ? 's' : ''} to drive.`);
+    }
+  </script>
+</body>
+</html>

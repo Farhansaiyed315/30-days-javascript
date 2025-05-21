@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Age Comparison</title>
+</head>
+<body>
+     <!-- Compare the values of myAge and yourAge using if … else. Based on the comparison and log the result to console stating who is older (me or you). Use prompt(“Enter your age:”) to get the age as input.
+Enter your age: 30 You are 5 years older than me.--> 
+
+<!-- Note Output will be seen in console open inspect element to see the full outcome or output. -->
+  <h1>Age Comparison 🧑👦</h1>
+
+  <script>
+    let myAge = 25; // You can change this to your actual age
+    let yourAge = prompt("Enter your age:");
+    yourAge = Number(yourAge); // Convert string to number
+
+    if (yourAge > myAge) {
+      console.log(`You are ${yourAge - myAge} years older than me.`);
+    } else if (yourAge < myAge) {
+      console.log(`I am ${myAge - yourAge} years older than you.`);
+    } else {
+      console.log("We are the same age!");
+    }
+  </script>
+</body>
+</html>
