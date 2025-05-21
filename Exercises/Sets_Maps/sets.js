@@ -33,10 +33,10 @@ console.log('Question number 4......');
 
 const mySet4 = new Set([1, 2, 3, 4, 5]);
 
-mySet.clear();  // Removes all elements
+mySet.clear(); 
 
-console.log(mySet);      // Output: Set(0) {}
-console.log(mySet.size); // Output: 0
+console.log(mySet);      
+console.log(mySet.size);
 
 
 //! Create a set of 5 string elements from array.
