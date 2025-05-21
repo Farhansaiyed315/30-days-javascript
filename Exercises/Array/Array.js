@@ -1,4 +1,4 @@
-console.log("Array.js");
+console.log("Array.js page 91");
 
 let FirstName = ["Farhan"]
 console.log(typeof(FirstName));
