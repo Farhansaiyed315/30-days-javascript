@@ -1,0 +1,54 @@
+
+RECOMMENDED SEQUENCE OF LEARNING. 
+
+🧠 JavaScript Learning Sequence (Beginner to Advanced)
+
+   Beginner Core Concepts
+
+1. ConsoleObjectModel
+2. Boolean
+3. Conditionals
+4. Loops
+5. Functions
+6. HigerOrderFunction (Higher Order Functions)
+7. Callbackfunc
+
+ 🔄 Intermediate Core Concepts
+
+8.  Array
+9.  String
+10. Objects
+11. Destructor
+12. Sets\_Maps
+13. ErrorHandling
+
+ 🔥 Advanced JavaScript Concepts
+
+14. Closures
+15. Classes
+16. Promises
+17. Async\_Await
+18. RegularExpression
+19. JSON
+
+ 🌐 DOM + Browser API
+
+20. Dom1
+21. Dom2
+22. Event\_Listeners
+23. Web\_storage
+
+
+   Final Suggestions
+
+  After learning all topics, build small projects like:
+
+   ToDo App
+   Quiz App
+   Weather App using API
+
+
+
+Stay consistent, one topic at a time. Practice daily, build projects, and push to GitHub to track your journey.
+
+Happy Coding!
