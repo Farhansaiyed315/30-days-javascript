@@ -1,4 +1,5 @@
-console.log("selftry.js");
+//! ALL EXERCISE QUESTIONS SOLVED.
+console.log("ALL EXERCISE QUESTIONS SOLVED. selftry.js");
 
 
 let challenge = "30 days of javascript"
@@ -476,5 +477,4 @@ console.log(findMax(0, -10, -2));
 
 
 
-
- 
+console.log('..........................................................................................');

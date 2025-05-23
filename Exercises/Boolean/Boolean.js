@@ -1,5 +1,5 @@
-// Page number 64 Boolean and date datatypes exercise. 
-console.log('Question number one..............');
+// Page number 64 of notes pdf  Boolean and date datatypes exercise. 
+console.log('Question number one Day 3 ......');
 
 let firstName = "Farhan";
 let lastName = "Saiyed";

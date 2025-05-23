@@ -1,4 +1,6 @@
-console.log("console object model page 193 Day 13 .........");
+//! console object model page 193 of notes pdf Day 13 
+
+console.log("console object model page 193 of notes pdf Day 13 .........");
 
 console.log(console);
 console.table();
