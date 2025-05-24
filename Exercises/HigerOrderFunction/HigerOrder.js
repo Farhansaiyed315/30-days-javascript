@@ -11,7 +11,7 @@ console.log("Higher Order Function pagae 146 of notes pdf..........");
 // You can use forEach only on arrays, not on normal objects.
 
 
-const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand', 'India', 'England']
 
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
 
@@ -60,7 +60,7 @@ console.log('Question number 3.........');
 function logCountry(country) {
   console.log(country);
 }
-countries.forEach(logCountry);  
+countries.forEach(logCountry);
 //? so main function ka name built in function yani foreach ka argument ban gaya hai total 2 function 
 //? foreach wala function logcountry ko call kr raha hai yani ek funtion dusre ko call kr raha hai and 
 //? this is what we call a call back funtion. 
@@ -68,25 +68,25 @@ countries.forEach(logCountry);
 //! Use forEach to console.log each name in the names array.
 console.log('Question number 4.........');
 
-function lognaam(naam){
+function lognaam(naam) {
   console.log(naam);
-  
+
 }
 names.forEach(lognaam)
 
 //! Use forEach to console.log each number in the numbers array.
 console.log('Question number 5.........');
 
-function lognum(num){
+function lognum(num) {
   console.log(num);
-  
+
 }
 numbers.forEach(lognum)
 
 //! Use map to create a new array by changing each country to uppercase in the countries array.
 console.log('Question number 6.........');
 
-function loguppercase(country){
+function loguppercase(country) {
   console.log(country.toUpperCase());
 }
 
@@ -95,24 +95,24 @@ countries.map(loguppercase);
 //! Use map to create an array of countries length from countries array.
 console.log('Question number 7.........');
 
-function loglenght(country){
+function loglenght(country) {
   console.log(country.length);
-  
+
 }
 countries.map(loglenght);
 
 //! Use map to create a new array by changing each number to square in the numbers array
 console.log('Question number 8.........');
 
-function logsquare(num){
-  console.log(num * num );
+function logsquare(num) {
+  console.log(num * num);
 }
 numbers.map(logsquare)
 
 //! Use map to change to each name to uppercase in the names array.
 console.log('Question number 9.........');
 
-function loguppercase(name){
+function loguppercase(name) {
   console.log(name.toUpperCase());
 }
 
@@ -125,4 +125,36 @@ function logPrices(product) {
 }
 products.map(logPrices);
 
+//! Use filter to filter out countries containing land.
 
+console.log('Quesion number 11.......');
+
+const countriesWithLand = countries.filter(country => country.includes("land"));
+console.log(countriesWithLand);
+
+//! Use filter to filter out countries having six character
+console.log('Question number 12.......');
+
+const countriesWithSix = countries.filter(country => country.length === 6)
+console.log(countriesWithSix);
+
+const countriesWithfive = countries.filter(country => country.length === 5)
+console.log(countriesWithfive);
+
+//! Use filter to filter out countries containing six letters and more in the country array.
+console.log('Question number 13.......');
+
+const countriesWithSixAndMore = countries.filter(country => country.length >= 6)
+console.log(countriesWithSixAndMore);
+
+//! Use filter to filter out country start with 'E';
+console.log('Question number 14.......');
+
+const CountriesStartsWithE = countries.filter(country => country.startsWith("E"))
+console.log(CountriesStartsWithE);
+
+//! Use filter to filter out only prices with values.
+console.log('Question number 15.......');
+
+const validPriceProducts = products.filter(product => typeof product.price === 'number');
+console.log(validPriceProducts);   // ignoring empty or invalid prices. 
