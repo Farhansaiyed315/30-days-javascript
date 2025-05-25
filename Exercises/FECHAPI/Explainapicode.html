@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- API stands for Application Programming Interface. 
+     
+    An API allows two software programs to talk to each other.
+
+For example:
+
+GitHub gives you an API.
+
+You send a request: "Hey GitHub, give me info about this user."
+
+GitHub replies with that info, in JSON format.
+
+-->
+    <h1> API EXplained  </h1>
+    <script>
+        //  You’re defining the URL of the API you want to fetch. This URL gives public data about the GitHub user
+        const RequestUrl = 'https://api.github.com/users/octocat'
+
+        // You’re creating a new XMLHttpRequest object (XHR). This object lets you send HTTP requests in JavaScript (like GET, POST).
+        const Xhr = new XMLHttpRequest();
+
+        // .open() is like opening a door and saying:
+        // 'GET' → "I just want to get data from the server"
+        //  RequestUrl → the address you're sending the request to
+        Xhr.open('GET', RequestUrl)
+
+
+        // But opening doesn’t send the request yet — you still need to call .send().
+        // You’re setting up a function that runs every time the request state changes.
+
+        // There are 5 readyState values:
+        // 0: Request not initialized
+        // 1: Connection established
+        // 2: Request received
+        // 3: Processing request
+        // 4: Request finished and response is ready 
+        Xhr.onreadystatechange = function () {
+            console.log(Xhr.readyState);
+
+
+            // This checks if the request is complete. Only then we can use the data.
+            if (Xhr.readyState === 4) {
+                // The API sends data in JSON format (looks like an object but it’s a string).
+                // So you need to convert JSON to a real object using JSON.parse().
+                const data = JSON.parse(this.responseText)
+
+
+                // Logs the type of the data (which will be "object" after parsing).
+                console.log(typeof data);
+
+
+
+                // Now you’re accessing some specific data returned by the API:
+                // followers → number of followers octocat has
+                // id → user ID on GitHub
+                // type → user type (User, Organization, etc.)
+                console.log(data.followers);
+                console.log(data.id);
+                console.log(data.type);
+
+            }
+        }
+        //  Sends the actual request to GitHub.
+        Xhr.send();
+
+        // This line runs immediately after Xhr.send() — logs to confirm request was sent (but doesn't wait for response).
+        console.log('request hua ya nai check ');
+
+    </script>
+</body>
+
+</html>
