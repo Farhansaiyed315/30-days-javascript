@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="Start">Start</button>
+    <br><br>
+    <button id="stop">Stop</button>
+
+    <script>
+
+        //! Note we can paasss parameters in SetInterval
+
+        const sayMyName = function (str) {
+            console.log(str, "Farhan", Date.now());
+        }
+        const Intervalend = setInterval(sayMyName, 1000, 'hi')
+
+        clearInterval(Intervalend)
+    </script>
+</body>
+<link rel="stylesheet" href="styles.css">
+
+</html>
