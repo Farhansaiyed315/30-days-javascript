@@ -26,9 +26,8 @@ RECOMMENDED SEQUENCE OF LEARNING AFTER YOU COMPLETE THE COURSE ONCE
 
 14. Closures
 15. Classes
-16.1 SetTimeout
-16.2 ClearTimeout
-16.3 SetInterval
+16.1 SetTimeout and  ClearTimeout
+16.2 SetInterval
 16.4 Promises - fech api - async await.
 17. Async\_Await
 18. RegularExpression
