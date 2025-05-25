@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Index two.</h1>
+
+<body>
+
+    <button id="stop">Stop</button>
+    <script>
+        const sayFarhan = function () {
+            console.log("Farhan");
+        }
+        setTimeout(sayFarhan, 5000)
+
+        const changeheader = function () {
+            document.querySelector('h1').innerHTML = "A well structured course. "
+        }
+
+        const changeTimeout = setTimeout(changeheader, 2000);
+
+        document.querySelector('#stop').addEventListener('click', function () {
+            clearTimeout(changeTimeout)
+            console.log("STOPPED");
+
+        })
+
+
+    </script>
+</body>
+
+
+
+<!--  A function called sayFarhan is defined to print "Farhan" in the console.
+
+setTimeout(sayFarhan, 5000) runs this function after 5 seconds (5000 milliseconds).
+
+ Another function changeheader is defined, which changes the <h1> text to "A well structured course."
+
+setTimeout(changeheader, 2000) schedules it to run after 2 seconds.
+
+ But notice: we're storing this timer in a variable → changeTimeout. This is important for stopping it later.
+
+
+   we have a button with the ID stop.
+
+When we  click it, it cancels the timer using clearTimeout(changeTimeout).
+
+Also logs "STOPPED" in the console.  -->
+
+
+
+<link rel="stylesheet" href="styles.css">
+
+</html>
