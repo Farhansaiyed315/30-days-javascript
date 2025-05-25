@@ -1607,12 +1607,12 @@ doStuff();
 
 
 
-//! Rest of he javascript which i know 
+//! Rest of he javascript which wll be updated soon stay tuned  
 
 // DOM
 // Event Listners
 
-//! Rest of the v.advance javascript which i wil learn after practicing and doing basics smoothly 
+//! Rest of the v.advance javascript, after practicing and doing basics smoothly 
 
 // Lexical scope 
 // Closures. 
