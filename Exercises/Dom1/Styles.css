@@ -1,0 +1,76 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#inputBox {
+  margin: 10px 0;
+  padding: 5px;
+  width: 200px;
+}
+
+a {
+  display: inline-block;
+  margin: 10px 0;
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Box styles */
+.box {
+  border: 2px solid black;
+  padding: 15px;
+  margin-top: 20px;
+  width: 200px;
+  background-color: lightgray;
+  transition: background-color 0.3s ease;
+}
+
+/* Highlight class for Module 6 */
+.highlight-box {
+  background-color: yellow !important;
+  border-color: orange !important;
+}
+
+/* Border & shadow classes for Module 9 */
+.bordered {
+  border: 3px dashed blue !important;
+}
+
+.shadowed {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .box {
+  background-color: #333;
+  border-color: #ccc;
+}
+
+.dark-mode a {
+  color: lightblue;
+}
