@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(54, 55, 55);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background-color: antiquewhite;
+    padding: 90px;
+    border-radius: 50px;
+    text-align: center;    /* important */
+   
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700 ;
+    cursor: pointer;
+}
+
+#increase {
+   background-color: rgb(4, 253, 4); 
+}
+
+#Decrease{
+    color: rgb(239, 235, 235);
+    background-color: red;
+}
+
+#Reset{
+    background-color: rgb(163, 157, 157);
+}
+
+
