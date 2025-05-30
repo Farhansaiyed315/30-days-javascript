@@ -33,7 +33,7 @@ This course is made for people who struggle with consistency. Each folder contai
   💪 Stay Consistent, Keep Coding!
 
  How to Run??
-Clone this repo and open any folder in your browser:
+Clone this repo and open any folder in your Machine:
 ```bash
 git clone https://github.com/Farhansaiyed315/30-days-javascript.git.
 
