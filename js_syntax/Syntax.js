@@ -196,7 +196,7 @@ let moreNums = [...nums, 4, 5];
 const student = { name: "Ali", age: 21 };
 const { name: studentName, age: studentAge } = student;
 
-const [a, b] = [10, 20];
+// const [a, b] = [10, 20];
 
 
 

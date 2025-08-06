@@ -1,0 +1,73 @@
+// 🌟 JavaScript Conditional Questions – Beginner to Advanced
+
+// 🟢 Beginner Level (1–10)
+
+// 1. What are conditional statements in JavaScript? List all types.
+
+// 2. Write a program to check if a number is positive or negative.
+
+// 3. Write a program that checks if a number is even or odd using if-else.
+
+// 4. How does an if-else statement work? Write a basic syntax example.
+
+// 5. Use if-else-if ladder to check grades based on marks (90+ = A, 80+ = B, etc).
+
+// 6. What is the difference between if and switch statement?
+
+// 7. Write a program using switch-case to display day of the week for 1 to 7.
+
+// 8. Explain truthy and falsy values in JavaScript with examples.
+
+// 9. What is a ternary operator? Rewrite a basic if-else using ternary.
+
+// 10. Write a program to check if a person is eligible to vote (age >= 18).
+
+
+// 🟡 Intermediate Level (11–18)
+
+// 11. Write a program that checks if a number is divisible by both 3 and 5.
+
+// 12. What is short-circuiting in JavaScript with logical AND (`&&`) and OR (`||`)?
+
+// 13. Create a login system that checks if username and password are correct using nested if.
+
+// 14. Write a program that compares two numbers and prints which one is greater.
+
+// 15. What is the difference between == and ===? Show with examples.
+
+// 16. Write a program to find the largest among 3 numbers using if-else-if.
+
+// 17. How do you use conditional statements inside a function?
+
+// 18. Explain the use of optional chaining (?.) and nullish coalescing (??) in conditional checks.
+
+
+// 🔴 Advanced Level (19–25)
+
+// 19. Write a function that takes age as input and returns:
+        // "Child" if age < 13
+        // "Teen" if 13 <= age < 18
+        // "Adult" if 18 <= age < 60
+        // "Senior" if age >= 60
+
+// 20. Create a program that validates a password: 
+        // must be 8+ characters, contain a number, and a capital letter.
+
+// 21. Use nested ternary operators to find if a number is positive, negative, or zero.
+
+// 22. Write a program that calculates electricity bill:
+//     - 0–100 units: ₹1/unit
+//     - 101–200 units: ₹2/unit
+//     - 201+ units: ₹5/unit
+
+// 23. Create a mini-auth system:
+//     - If user is 'admin', show 'Access granted'
+//     - If user is 'guest', show 'Read-only access'
+//     - Else, show 'Access denied'
+
+// 24. Build a weather checker:
+//     - If temperature > 30: "Hot"
+//     - If 20 <= temp <= 30: "Pleasant"
+//     - If temp < 20: "Cold"
+
+// 25. Explain how to write clean and readable conditional logic using early return pattern in functions.
